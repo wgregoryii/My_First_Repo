@@ -72,5 +72,59 @@
 #output= (Num_1 - Num_2)*(Num_1 + Num_2)
 #print(output)
 
+#print("Enter Word - OR - to Replicate: ")
 
+#Number
+#string = int(input("Number? : "))
+#Word
+#string = (input("Word? : "))
+#print(string * 2)
+
+
+#phr = "Welcome to Bill's Playhouse! - "
+#print("Please enter number between 1 and your face!: ")
+#n= int(input())
+#if n > 100:
+#    print("Dont be stupid! You are NOT going to bring down my server with a buffer overflow! Nice try bitches!")
+#else:
+#    rep = phr*n
+#    split = rep.split()
+#    sep = "-"
+#    ans = sep.join(split)
+#    print(ans)
+
+#Number
+#print("Enter one number first, then a word")
+#n = int(input("Number? : "))
+#Word
+#w = (input("Word? : "))
+#output= n, w
+#print(output)
+
+#Ask for a name
+print("Let's Get Real for A Minute!")
+n = (input("Enter Your Name? : "))
+print("Hello, ", n)
+print("How old are you? ")
+a = int(input("Age: "))
+if a >= 100:
+    print("You died a LONG time ago, inside... you died inside. Aaaannndd on the outside! Miiiight be a Zombie!")
+if a >= 50:
+    print("How are you still standing!?")
+    print("WOW", n , "YOU ARE", a, "!")
+    print("How much longer do you expect to live?")
+    d = input("Enter in years: ")
+    print("Well",n,", I wouldn't count on it!", a, "is already up there!", "And to expect", d, "more... Kinda stingy!")
+if a > 21:
+    print("Get out of here! You must be lying! You look like a baboons butt!")
+    print("SO...", n , "Gonna stick with the lie eh...", a, "?")
+    print("How much longer do you expect to live?")
+    d = input("Enter in years: ")
+    print("Well",n,", I wouldn't count on it! At", a, "your a little bitch", "not sure you'll make it", d, "more... LOSER!")
+if a == 21:
+    print("So.... how you doin'!?", n, "<3")
+    print(n , ",you come here often? Do you want too,",n,"???? a wink!!!")
+    print("How much longer do you expect to live?")
+    d = input("Enter in years: ")
+    print("Who CRAES",n,"! You into older men?", a, "is a fun age!", d, "more years could be spent with me!")
 
