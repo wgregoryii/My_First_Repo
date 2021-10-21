@@ -42,5 +42,10 @@ WebServerHost:
           wget $FOLDER/cat3.jpg
           systemctl start httpd
           systemctl enable httpd
-          
+
 Outputs:
+  WebsiteURL:
+    Value: !Sub
+      - http://${PublicAddress}
+      - PublicAddress: !GetAtt WebServerHost.PublicDnsName
+    Description: Kittens Carousel Application URL
