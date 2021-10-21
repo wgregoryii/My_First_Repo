@@ -25,13 +25,17 @@ WebServerHost:
       KeyName: bill
       SecurityGroupIds: 
         - !Ref WebServerSecurityGroup
-      SsmAssociations: 
-        - SsmAssociation
-      SubnetId: String
       Tags: 
-        - Tag
-      Tenancy: String
-      UserData: String
+        - Key: Name
+          Value: !Sub Name Server of ${AWS::StackName}
+      UserData:
+        Fn::Base64: |
+          #! /bin/bash
+          yum update -y 
+          yum install httpd -y
+          FOLDER=
+
+
       Volumes: 
         - Volume
       
