@@ -1,0 +1,38 @@
+AWSTemplateFormatVersion: 2010-09-09
+Descripton: 
+  Stuff being done and such and what not. 
+
+Recources: 
+  WebServerSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Enable HTTP for Apache Web Server and SSH for Secure connection
+      Secure connection
+      SecurityGroupIngress:
+      - CidrIp: 0.0.0.0/0
+        FromPort: 80
+        ToPort: 80
+        IpProtocol: tcp
+      - CidrIp: 0.0.0.0/0
+        FromPort: 22
+        ToPort: 22
+        IpProtocol: tcp
+WebServerHost:
+  Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-02e136e904f3da870
+      InstanceType: t2.micro
+      KeyName: bill
+      SecurityGroupIds: 
+        - !Ref WebServerSecurityGroup
+      SsmAssociations: 
+        - SsmAssociation
+      SubnetId: String
+      Tags: 
+        - Tag
+      Tenancy: String
+      UserData: String
+      Volumes: 
+        - Volume
+      
+Outputs:
