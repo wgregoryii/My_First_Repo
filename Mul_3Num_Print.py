@@ -102,29 +102,40 @@
 #print(output)
 
 #Ask for a name
+#print("Let's Get Real for A Minute!")
+#n = (input("Enter Your Name? : "))
+#print("Hello, ", n)
+#print("How old are you? ")
+#a = int(input("Age: "))
+#if a in range (21):
+#    print("Get out of here! You must be lying! You look like a baboons butt!")
+#    print("SO...", n , "Gonna stick with the lie eh...", a, "?")
+#    print("How much longer do you expect to live?")
+#    d = input("Enter in years: ")
+#    print("Well",n,", I wouldn't count on it! At", a, "your a little bitch", "not sure you'll make it", d, "more... LOSER!")
+#elif a == 21:
+#    print("So.... how you doin'!?", n, "<3")
+#    print(n , ",you come here often? Do you want too,",n,"???? a wink!!!")
+#    print("How much longer do you expect to live?")
+#    d = input("Enter in years: ")
+#    print("Who CRAES",n,"! You into older men?", a, "is a fun age!", d, "more years could be spent with me!")
+#elif a in range (50,99):
+#    print("How are you still standing!?")
+#    print("WOW", n , "YOU ARE", a, "!")
+#    print("How much longer do you expect to live?")
+#    d = input("Enter in years: ")
+#    print("Well",n,", I wouldn't count on it!", a, "is already up there!", "And to expect", d, "more... Kinda stingy!")
+#elif a >= 100:
+#    print("You died a LONG time ago, inside... you died inside. Aaaannndd on the outside! Miiiight be a Zombie!")
+
 print("Let's Get Real for A Minute!")
-n = (input("Enter Your Name? : "))
-print("Hello, ", n)
-print("How old are you? ")
-a = int(input("Age: "))
-if a >= 100:
-    print("You died a LONG time ago, inside... you died inside. Aaaannndd on the outside! Miiiight be a Zombie!")
-if a >= 50:
-    print("How are you still standing!?")
-    print("WOW", n , "YOU ARE", a, "!")
-    print("How much longer do you expect to live?")
-    d = input("Enter in years: ")
-    print("Well",n,", I wouldn't count on it!", a, "is already up there!", "And to expect", d, "more... Kinda stingy!")
-if a > 21:
-    print("Get out of here! You must be lying! You look like a baboons butt!")
-    print("SO...", n , "Gonna stick with the lie eh...", a, "?")
-    print("How much longer do you expect to live?")
-    d = input("Enter in years: ")
-    print("Well",n,", I wouldn't count on it! At", a, "your a little bitch", "not sure you'll make it", d, "more... LOSER!")
-if a == 21:
-    print("So.... how you doin'!?", n, "<3")
-    print(n , ",you come here often? Do you want too,",n,"???? a wink!!!")
-    print("How much longer do you expect to live?")
-    d = input("Enter in years: ")
-    print("Who CRAES",n,"! You into older men?", a, "is a fun age!", d, "more years could be spent with me!")
+n = (input("Enter Your Managers Name? : "))
+print("Oh SHIT!!!!, ", n,"!")
+print("On a scale of 1 of 1 to 100 how would you rate their level of stupidity? ")
+a = (input("Number: "))
+print("Get out of here! You must be lying! They manage like shit!")
+print(n , "Isn't very bright", a, " !  Your expectations might be a little/lot high!!")
+print("How much longer can you take their shit?")
+d = input("Enter in SECONDS: ")
+print("Doesn't matter,", d ,"or not..." "You died a LONG time ago, inside... you died inside. Aaaannndd on the outside! Miiiight be a Corporate Zombie!")
 
