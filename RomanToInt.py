@@ -19,8 +19,8 @@ loop_read_order = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
 
 #Define "userProvidednumber" for loop
 for userProvidednumber in loop_read_order:
-    if userInputnumber != 0:
-        leftOver= userInputnumber//userProvidednumber
+    if userInputnumber != 0: #If the users number does NOT equal zero define "leftOver"
+        leftOver= userInputnumber//userProvidednumber #Devide the "userInputnumber" by the "userProvidednumber"
 
         #If leftOver is not zero output the roman equivalent
         if leftOver != 0:
