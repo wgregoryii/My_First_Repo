@@ -1,0 +1,43 @@
+AWSTemplateFormatVersion: 2019-09-09
+Decsription: 
+  CloudFormation Template for Roman Numerals Converter Applicaiton. 
+
+Parameters:
+  paramName:
+    Description: Enter the name of your key pair for SSH connection. We should work hard like Bill who says "Work, work, work"
+    Type: AWS::EC2::KeyPair::KeyName
+    Default: 
+    ConstraintDescription : Must be the name of an existing EC2 KeyPair.
+
+Resources:
+  WebServerSecurityGroup:
+      Type: AWS::EC2::SecurityGroup
+      Properties:
+        GroupDescription: Enable HTTP and SSH for EC2. 
+        SecurityGroupIngress:
+          - IpProtocol: tcp
+            FromPort: 80
+            ToPort: 80
+            CidrIP: 0.0.0.0/0
+          - IpProtocol: tcp
+            FromPort: 22
+            ToPort: 22
+            CidrIP: 0.0.0.0/0
+  LogicalID:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-01cc34ab2709337aa
+      InstanceType: t2.micro
+      KeyName: !Ref WebServerSecurityGroup
+        Tags: 
+          - Key: Name
+            Value: !!Sub Web Server of ${AWS::StackName} Stack
+        UserData: !Base64 
+        #! /bin/bash
+        yum update -y
+        yum install python3 -y
+        pip3 install flask
+        cd /home/ec2-user
+        FOLDER=""
+
+Outputs:
